@@ -1,0 +1,176 @@
+.start_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: ubuntu;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.start_btn:hover {
+    background-color: rgb(8, 160, 8);
+}
+
+.rules {
+    display: none;
+}
+
+.rules.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.rules.active p {
+    text-align: justify;
+}
+
+.rules.active button {
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: ubuntu;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.contiune_btn {
+    background-color: rgb(23, 23, 146);
+}
+
+.contiune_btn:hover {
+    background-color: rgb(90, 90, 230);
+}
+
+.exit_btn {
+    background-color: rgb(228, 18, 18);
+}
+
+.exit_btn:hover {
+    background-color: rgb(223, 73, 73);
+}
+
+.quiz-info {
+    display: none;
+}
+
+.quiz-info.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.time-div {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+
+.options li {
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(180, 179, 179);
+}
+
+ul li.correct {
+    background-color: green;
+}
+
+ul li.incorrect {
+    background-color: red;
+}
+
+.quiz-bottom {
+    margin: 20px 0;
+}
+
+.quiz_que {
+    margin-bottom: 10px;
+}
+
+.next_btn {
+    background: rgb(11, 11, 139);
+    width: 100px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: ubuntu;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.total-div {
+    width: 100px;
+    height: 50px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: blue;
+    color: white;
+}
+
+ul li.disabled {
+    pointer-events: none;
+}
+
+@media screen and (max-width:560px) {
+    .rules.active {
+        width: 210px;
+    }
+
+    .quiz-info.active {
+        width: 210px;
+    }
+
+    .options {
+        width: 210px;
+    }
+}
